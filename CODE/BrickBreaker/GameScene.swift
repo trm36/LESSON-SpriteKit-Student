@@ -37,7 +37,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.ball = childNode(withName: NodeName.string(from: .ball)) as? SKSpriteNode
         self.paddle = childNode(withName: NodeName.string(from: .paddle)) as? SKSpriteNode
         
-        
         let borderPhysicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         borderPhysicsBody.isDynamic = false
         borderPhysicsBody.allowsRotation = false
